@@ -384,6 +384,7 @@ footer {
 @media (max-width:800px) {
     #navigation ul {
         display: flex;
+
     }
     #navigation li {
         padding: 0.75em;
@@ -430,16 +431,12 @@ footer {
         margin-bottom: 1em;
         max-width: 90%;
     }
-    #contact form {
-        padding-left: 0;
-    }
     
   }
 
   @media (max-width:650px) {
     #navigation ul {
         display: flex;
-        margin-left: 0;
         padding-left: 0;
     }
     #navigation li {
@@ -487,7 +484,7 @@ footer {
         margin-bottom: 1em;
         max-width: 90%;
     }
-    #contact form {
-        padding-left: 0;
+    #form {
+        text-align: left;
     }
   }
