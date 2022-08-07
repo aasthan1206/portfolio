@@ -105,12 +105,14 @@ body {
 /*Non-hero*/
 
 #about {
-    display: flex;
     background: #000000;
     padding-top: 0.75em;
     padding-left: 3.75em;
     padding-right: 2em;
     padding-bottom: 2.75em;
+}
+.about-content {
+    display: flex;
 }
 
 .about-heading {
@@ -388,23 +390,27 @@ footer {
     }
 
     #hero-intro {
-        display: block;
-        padding-bottom: 12em;
+        flex-direction: column;
+        padding-bottom: 2em;
     }
     #logo-img {
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
         text-align: center;
-        margin-left: auto;
-        padding-right: 10%;
+        padding-left: 0;
     }
     #intro {
         text-align: center;
-        margin-top: 0;
+        float: none;
         margin-left: 0;
-        padding-left: 0;
-        padding-right: 20%;
+        margin-top: 0;
     }
-    #about {
-        display: block;
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    .about-heading {
+        margin-bottom: 0.25em;
     }
     #image {
         display: block;
@@ -412,18 +418,20 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
     .circle {
         width: 13%;
         height: 4em;
     }
     #projects-body {
-        display: block;
+        flex-direction: column;
     }
     .pro {
         width: 85%;
         margin-bottom: 1em;
         max-width: 90%;
+    }
+    #contact form {
+        padding-left: 0;
     }
     
   }
@@ -435,24 +443,28 @@ footer {
     #navigation li {
         padding: 0.75em;
     }
-
     #hero-intro {
-        display: block;
-        padding-bottom: 12em;
+        flex-direction: column;
+        padding-bottom: 2em;
     }
     #logo-img {
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
         text-align: center;
-        margin-left: auto;
-        padding-right: 3em;
+        padding-left: 0;
     }
     #intro {
         text-align: center;
-        margin-top: 0;
+        float: none;
         margin-left: 0;
-        padding-right: 2em;
+        margin-top: 0;
     }
-    #about {
-        display: block;
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    .about-heading {
+        margin-bottom: 0.25em;
     }
     #image {
         display: block;
@@ -465,15 +477,15 @@ footer {
         width: 30%;
         height: 3em;
     }
-    #form {
-        padding-left: 0em;
-    }
     #projects-body {
-        display: block;
+        flex-direction: column;
     }
     .pro {
-        max-width: 90%;
-        width: 90%;
+        width: 85%;
         margin-bottom: 1em;
+        max-width: 90%;
+    }
+    #contact form {
+        padding-left: 0;
     }
   }
