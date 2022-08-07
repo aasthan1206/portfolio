@@ -384,12 +384,11 @@ footer {
 @media (max-width:800px) {
     #navigation ul {
         display: flex;
-
     }
     #navigation li {
-        padding: 0.75em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
-
     #hero-intro {
         flex-direction: column;
         padding-bottom: 2em;
@@ -437,10 +436,15 @@ footer {
   @media (max-width:650px) {
     #navigation ul {
         display: flex;
-        padding-left: 0;
+        padding-left: 4px;
     }
     #navigation li {
-        padding: 0.75em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    #resume-btn {
+        float:none;
+        margin-left: 0.5em;
     }
     #hero-intro {
         flex-direction: column;
@@ -483,8 +487,5 @@ footer {
         width: 85%;
         margin-bottom: 1em;
         max-width: 90%;
-    }
-    #form {
-        text-align: left;
     }
   }
